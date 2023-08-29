@@ -14,7 +14,7 @@ sanitizers = false
 tools = ["cargo", "src"]
 
 [install]
-prefix = "~/rust-install"
+prefix = "rust-install"
 sysconfdir = "etc"
 
 [rust]
