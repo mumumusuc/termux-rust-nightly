@@ -1,0 +1,38 @@
+[llvm]
+link-shared = true
+use-libcxx = true
+
+[build]
+host = ["aarch64-linux-android"]
+target = ["aarch64-linux-android"]
+rustc = "/data/data/com.termux/files/usr/bin/rustc"
+cargo = "/data/data/com.termux/files/usr/bin/cargo"
+rustfmt = "/data/data/com.termux/files/usr/bin/rustfmt"
+docs = false
+extended = true
+sanitizers = false
+tools = ["cargo", "src"]
+
+[install]
+prefix = "~/rust-install"
+sysconfdir = "etc"
+
+[rust]
+channel = "nightly"
+optimize = true
+debug = false
+optimize-tests = false
+codegen-tests = false
+codegen-units = 0
+deny-warnings = false
+jemalloc = false
+rpath = false
+
+[target.aarch-linux-android]
+llvm-config = "/data/data/com.termux/files/bin/llvm-config"
+ar = "llvm-ar"
+profiler = true
+
+[dist]
+src-tarball = false
+missing-tools = true

@@ -1,0 +1,35 @@
+{
+    "control": {
+        "Package": "rust-nightly",
+        "Version": "1.71.0-nightly",
+        "Architecture": "aarch64",
+        "Maintainer": "mumumusuc <mumumusuc@gmail.com>",
+        "Depends": "llvm, clang",
+        "Homepage": "https://www.github.com/mumumusuc/termux-rust-nightly",
+        "Description": [ "build from [2023-05-26-rustc-nightly-src]" ]
+    },
+
+    "installation_prefix": "/data/data/com.termux/files/usr",
+
+    "data_files": {
+        "bin": { 
+            "source": "bin", 
+            "source_recurse": true 
+        },
+        "lib": { 
+            "source": "lib", 
+            "source_recurse": true 
+        },
+        "libexec": { 
+            "source": "libexec", 
+            "source_recurse": true 
+        },
+        "share": { 
+            "source": "share", 
+            "source_recurse": true 
+        },
+        "etc/bash_completion.d/cargo": {
+            "source": "src/etc/bash_completion.d/cargo"
+        }
+    }
+}
