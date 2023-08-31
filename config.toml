@@ -1,6 +1,5 @@
 [llvm]
 link-shared = true
-use-libcxx = true
 
 [build]
 host = ["aarch64-linux-android"]
@@ -27,6 +26,7 @@ codegen-units = 0
 deny-warnings = false
 jemalloc = false
 rpath = false
+lld = true
 
 [target.aarch-linux-android]
 llvm-config = "/data/data/com.termux/files/bin/llvm-config"
