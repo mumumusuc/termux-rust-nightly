@@ -28,11 +28,10 @@ jemalloc = false
 rpath = false
 lld = true
 
-[target.aarch-linux-android]
+[target.aarch64-linux-android]
 llvm-config = "/data/data/com.termux/files/bin/llvm-config"
 ar = "llvm-ar"
-profiler = true
 
 [dist]
 src-tarball = false
-missing-tools = true
+#missing-tools = true
